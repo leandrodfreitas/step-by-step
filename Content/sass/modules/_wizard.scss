@@ -1,0 +1,162 @@
+body {
+   background: #F6F5F5; 
+   font-family: 'Ubuntu', sans-serif;   
+   margin: 0;
+   padding: 0;
+}
+
+*, 
+*:after, 
+*:before {
+   box-sizing: border-box;
+}
+
+.container {   
+   margin: 0 auto;
+	max-width: 1200px;
+   
+   &:after {
+      content: "";
+      display: table;
+      clear: both;      
+   }
+   
+}
+
+.header {
+   margin-bottom: 30px;
+   margin-top: 30px;
+}
+
+.title {
+   color: #007931;
+   font-size: 30px;      
+   text-align: center;   
+}
+
+.progress {
+   border-bottom: 1px solid #E4E4E4;   
+   display: table;      
+   margin: 0;
+   padding: 0 0 20px 0;
+   position: relative;
+   width: 100%;
+   
+   &:after {
+      background-color: #E4E4E4;
+      content: '';         
+      height: 2px;
+      left: 10%;       
+      position: absolute;                                    
+      top: 25px;
+      width: 80%;
+   }
+   
+   &:before {
+      background-color: #007931;
+      content: '';         
+      height: 2px;
+      left: 10%;       
+      position: absolute;                                    
+      top: 25px;      
+      z-index: 1;
+   }
+
+   li {
+      color: #B9B9B9;      
+      display: table-cell;      
+      height: 115px;
+      padding-left: 3px;
+      padding-right: 3px;
+      position: relative;
+      text-align: center;
+      
+      &.complete {
+         color: #007931;
+      }
+      
+      a {
+         text-decoration: none;   
+      }
+
+      .step {
+         background-color: #EDEBEB;         
+         border: 1px solid #B9B9B9;
+         color: #898989;
+         display: block;
+         height: 50px;
+         font-size: 28px;
+         font-weight: 700;
+         line-height: 47px;
+         margin: 0 auto;
+         position: relative;         
+         text-align: center;      
+         width: 50px;
+         z-index: 1;         
+         -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+                 border-radius: 50%;
+         
+         &.complete {
+            background-color: #CAEBD7;
+            border: 1px solid #007931;         
+            color: #007931;
+         }
+         
+      }
+
+      .step-txt {
+         font-weight: 100;
+         left: 0;
+         position: absolute;         
+         margin-top: 10px;
+         right: 0;               
+      }
+
+   }
+   
+}
+
+@media(max-width: 890px) {
+   
+   .progress li .step-txt {      
+      font-size: 13px;
+      
+      br {
+         display: none;   
+      }
+      
+   }
+   
+}
+
+@media(max-width: 590px) {
+   
+   .progress {
+      margin-top: 30px;
+      
+      &:after, 
+      &:before {
+         top: 21px;
+      }
+      
+      li {
+         height: 50px;
+      
+         .step {
+            font-size: 20px;
+            height: 42px;
+            line-height: 40px;
+            width: 42px;    
+         }
+         
+      }
+      
+      .step-txt {
+         display: none;   
+      }
+      
+   }
+   
+}
+

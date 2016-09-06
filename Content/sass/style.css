@@ -1,0 +1,136 @@
+/* line 1, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+body {
+  background: #F6F5F5;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+/* line 10, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
+
+/* line 14, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+.container {
+  margin: 0 auto;
+  max-width: 1200px; }
+  /* line 18, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+  .container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 26, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+.header {
+  margin-bottom: 30px;
+  margin-top: 30px; }
+
+/* line 31, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+.title {
+  color: #007931;
+  font-size: 30px;
+  text-align: center; }
+
+/* line 37, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+.progress {
+  border-bottom: 1px solid #E4E4E4;
+  display: table;
+  margin: 0;
+  padding: 0 0 20px 0;
+  position: relative;
+  width: 100%; }
+  /* line 45, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+  .progress:after {
+    background-color: #E4E4E4;
+    content: '';
+    height: 2px;
+    left: 10%;
+    position: absolute;
+    top: 25px;
+    width: 80%; }
+  /* line 55, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+  .progress:before {
+    background-color: #007931;
+    content: '';
+    height: 2px;
+    left: 10%;
+    position: absolute;
+    top: 25px;
+    z-index: 1; }
+  /* line 65, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+  .progress li {
+    color: #B9B9B9;
+    display: table-cell;
+    height: 115px;
+    padding-left: 3px;
+    padding-right: 3px;
+    position: relative;
+    text-align: center; }
+    /* line 74, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+    .progress li.complete {
+      color: #007931; }
+    /* line 78, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+    .progress li a {
+      text-decoration: none; }
+    /* line 82, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+    .progress li .step {
+      background-color: #EDEBEB;
+      border: 1px solid #B9B9B9;
+      color: #898989;
+      display: block;
+      height: 50px;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 47px;
+      margin: 0 auto;
+      position: relative;
+      text-align: center;
+      width: 50px;
+      z-index: 1;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%; }
+      /* line 100, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+      .progress li .step.complete {
+        background-color: #CAEBD7;
+        border: 1px solid #007931;
+        color: #007931; }
+    /* line 108, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+    .progress li .step-txt {
+      font-weight: 100;
+      left: 0;
+      position: absolute;
+      margin-top: 10px;
+      right: 0; }
+
+@media (max-width: 890px) {
+  /* line 122, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+  .progress li .step-txt {
+    font-size: 13px; }
+    /* line 125, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+    .progress li .step-txt br {
+      display: none; } }
+
+@media (max-width: 590px) {
+  /* line 135, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+  .progress {
+    margin-top: 30px; }
+    /* line 139, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+    .progress:after,
+    .progress:before {
+      top: 21px; }
+    /* line 143, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+    .progress li {
+      height: 50px; }
+      /* line 146, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+      .progress li .step {
+        font-size: 20px;
+        height: 42px;
+        line-height: 40px;
+        width: 42px; }
+    /* line 155, C:/Users/leandro.freitas/Desktop/step-by-step/Content/sass/modules/_wizard.scss */
+    .progress .step-txt {
+      display: none; } }
+
+/*# sourceMappingURL=style.css.map */
